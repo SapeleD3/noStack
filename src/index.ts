@@ -1,5 +1,6 @@
 import { Tree } from './types';
 import { getNewRootTree, getChildParentMap, buildNewTree } from './utils';
+// import sampleGraph from './utils/sampleGraph';
 
 const changeTreeRoot = (undirectedTree: Tree, newRoot: string): Tree => {
   const childToParentMap = getChildParentMap(undirectedTree);
@@ -11,7 +12,6 @@ const changeTreeRoot = (undirectedTree: Tree, newRoot: string): Tree => {
   }
 
   let subParent = childToParentMap[newRootTree.root];
-
   // loop backwards to find the last Parent
   while (childToParentMap[subParent] !== undirectedTree.root) {
     subParent = childToParentMap[subParent];
@@ -27,6 +27,9 @@ const changeTreeRoot = (undirectedTree: Tree, newRoot: string): Tree => {
   console.dir(newTree, { depth: null });
   return newTree;
 };
+
+// uncomment below to test
+// changeTreeRoot(sampleGraph, 'D');
 
 export default changeTreeRoot;
 export * from './types';

@@ -3,9 +3,8 @@ import { sampleTree } from '../src/utils';
 
 describe('test-coverage changeTreeRoot', () => {
   it('should error out when newRoot not in graph', () => {
-    const newRoot = 'z';
-    expect(() => changeTreeRoot(sampleTree, newRoot)).toThrow(
-      `No Child tree with root: ${newRoot}`
+    expect(() => changeTreeRoot(sampleTree, 'z')).toThrow(
+      `No Child tree with root: z`
     );
   });
 
