@@ -1,0 +1,31 @@
+{
+  "name": "nostack-algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "build": "tsc",
+    "lint": "eslint . --fix",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Sapele Moses",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.8",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint": "^8.23.0",
+    "jest": "^28.0.1",
+    "ts-jest": "^28.0.8"
+  }
+}
