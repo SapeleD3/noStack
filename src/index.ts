@@ -3,6 +3,7 @@ import { getNewRootTree, getChildParentMap, buildNewTree } from './utils';
 // import sampleGraph from './utils/sampleGraph';
 
 const changeTreeRoot = (undirectedTree: Tree, newRoot: string): Tree => {
+
   const childToParentMap = getChildParentMap(undirectedTree);
 
   const newRootTree = getNewRootTree(undirectedTree, newRoot);
@@ -29,7 +30,7 @@ const changeTreeRoot = (undirectedTree: Tree, newRoot: string): Tree => {
 };
 
 // uncomment below to test
-// changeTreeRoot(sampleGraph, 'D');
+// console.dir(changeTreeRoot(sampleGraph, 'D'), { depth: null });
 
 export default changeTreeRoot;
 export * from './types';
