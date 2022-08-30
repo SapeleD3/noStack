@@ -24,6 +24,12 @@ Edge cases considered:
 
 1. in a case where the tree is nested and there is 3 layers seperating the newRoot to Top root the while loop creates a sequence resulting at the child root that branches of to form the relation and does the swapping from there
 
+**ROBERT'S ALGORITHM**
+To run robert's version, check out the `src/robert` directory.  The main function is `changeRoot` in `src/robert/changeRoot.ts`.  That file explains the algorithm. Helper functions are also explained as needed.
+
+You can see all of the functions tested in `tests/ava`.  Specifically, run `npm run int-test`.
+
+
 **HOW TO GET STARTED**
 
 STEP 1: Run to install all required packages
